@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+.shop {
+  display: flex;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.shop__item {
+  padding: 10px;
+  min-width: 200px;
+  height: 260px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
+  gap: 10px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #f6f6f6;
+  box-shadow: 0 0 10px rgb(123, 122, 122);
+  box-sizing: border-box;
 }
-
-.App-link {
-  color: #61dafb;
+.shop__item_name {
+  font-size: 16px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.shop__item_color {
+  font-size: 10px;
+  color: rgb(121, 120, 120);
+}
+.shop__item_img {
+  object-fit: cover;
+  height: 150px;
+}
+.shop__item_footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.shop__item_price {
+  font-size: 12px;
+  color: red;
+}
+.shop__item_button {
+  padding: 7px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: red;
+  background-color: #f6f6f6;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+.shoplist {
+  display: flex;
+  flex-direction: column;
+}
+.shoplist__item {
+  padding: 10px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f6f6f6;
+  box-sizing: border-box;
+}
+.shoplist__item_name {
+  font-size: 16px;
+}
+.shoplist__item_color {
+  font-size: 10px;
+  color: rgb(121, 120, 120);
+}
+.shoplist__item_img {
+  object-fit: cover;
+  height: 70px;
+}
+.shoplist__item_price {
+  font-size: 12px;
+  color: red;
+}
+.shoplist__item_button {
+  padding: 7px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: red;
+  background-color: rgb(233, 233, 236);
+  border: 1px solid red;
+  border-radius: 10px;
+}
+.switch {
+  margin: 10px;
+  text-align: right;
+  color: rgb(123, 122, 122);
+  cursor: pointer;
 }
