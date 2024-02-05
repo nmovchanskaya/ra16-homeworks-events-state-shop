@@ -1,9 +1,12 @@
 .shop {
   display: flex;
+  flex-wrap: wrap;
+  width: 850px;
+  margin: 0 auto;
 }
 .shop__item {
   padding: 10px;
-  min-width: 200px;
+  min-width: 250px;
   height: 260px;
   margin: 10px;
   display: flex;
